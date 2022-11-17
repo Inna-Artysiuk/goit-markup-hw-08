@@ -1,0 +1,43 @@
+.cart-list {
+    display: flex;
+    gap: var(--card-set-gap);
+  }
+  .cart-list__item {
+    width: 270px;
+    &::before {
+      display: block;
+      content: "";
+      height: 120px;
+      margin-bottom: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: var(--background-grup);
+      }
+  }
+  .cart-list__content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+
+  .icon__antenna::before {
+    background-image: url(../images/antenna.svg);
+    background-size: 70px;
+  }
+  .icon__clock::before {
+    background-image: url(../images/clock.svg);
+     background-size: 70px;
+  }
+  .icon__diagram::before {
+    background-image: url(../images/diagram.svg);
+     background-size: 70px;
+  }
+  .icon__astronaut::before {
+    background-image: url(../images/astronaut.svg);
+     background-size: 70px;
+  }
+  
+  

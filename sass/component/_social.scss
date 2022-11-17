@@ -1,0 +1,33 @@
+.soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .soc__item {
+    width: 44px;
+    height: 44px;
+  }
+  .soc__link {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--tra) ;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  .soc__icon {
+    fill: #afb1b8;
+    transition: fill var(--tra);
+    .soc__link:hover &,
+    .soc__link:focus & {
+      fill: #ffffff;
+    }
+  }
+

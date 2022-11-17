@@ -1,0 +1,39 @@
+.people {
+    background-color: var(--background-grup);
+  }
+  .people__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-set-gap);
+  }
+  .people__item {
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--headin-color);
+    @media screen and (min-widht: 768px) {
+        width: calc((100% - 30px) / 2);
+  }
+}
+  .people__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+  }
+  .people__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 16px;
+  }
+ 
+  .people__name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }

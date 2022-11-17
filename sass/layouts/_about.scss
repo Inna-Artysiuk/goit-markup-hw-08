@@ -1,0 +1,28 @@
+.about {
+    padding-top: 0;
+  }
+  .picture-list {
+    display: flex;
+    gap: var(--card-set-gap);
+  }
+  .picture-list__item {
+    position: relative;
+    width: calc((100% - var(--card-set-gap) * 2) / 3);
+  }
+  .picture-list__title{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
