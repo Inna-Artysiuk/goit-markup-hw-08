@@ -1,9 +1,10 @@
 .cart-list {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--card-set-gap);
   }
   .cart-list__item {
-    width: 270px;
+    width: 100%;
     &::before {
       display: block;
       content: "";
@@ -13,6 +14,12 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: var(--background-grup);
+      }
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
       }
   }
   .cart-list__content {
