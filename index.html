@@ -63,12 +63,12 @@
     </div>
     </header> --> 
     <main>
-      <!-- <section class="hero section">
-        <div class="container">
+      <section class="hero section">
+        <div class="container container-hero">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" data-modal-open class="button order">Замовити послугу</button>
         </div>
-      </section>  -->
+      </section> 
 
       <section class="benefits section">
         <div class="container benefits__container">
@@ -106,32 +106,62 @@
         </div>
       </section> 
       <!-- Чим займаються-->
-      <!-- <section class="about section">
+      <section class="about section">
         <div class="container about__container">
-          <h2 class="subtitle">Чим ми займаємося</h2>
+          <h2 class=" about__subtitle">Чим ми займаємося</h2>
           <ul class="picture-list list">
             <li class="picture-list__item">
-              <img src="./images/box1.jpg" alt="Рзробка" width="370" >
+              <img 
+              srcset="./images/about/pic1.jpg 1x,
+              ./images/about/pic1-2x.jpg 2x
+              "
+              src="./images/box1.jpg" alt="Рзробка" width="370" >
               <p class="picture-list__title">Десктопні додатки</p>
             </li>
             <li class="picture-list__item">
-              <img src="./images/img1.jpg" alt="Дизайн" width="370" >
+              <img 
+              srcset="./images/about/pic2.jpg 1x,
+              ./images/about/pic2-2x.jpg 2x
+              "
+              src="./images/img1.jpg" alt="Дизайн" width="370" >
               <p class="picture-list__title">Мобільні додатки</p>
             </li>
             <li class="picture-list__item">
-              <img src="./images/img2.jpg" alt="Тестування" width="370" >
+              <img 
+              srcset="./images/about/pic3.jpg 1x,
+              ./images/about/pic3-2x.jpg 2x
+              "
+              src="./images/img2.jpg" alt="Тестування" width="370" >
               <p class="picture-list__title">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Команда-->
       <section class="people section">
         <div class="container people__container">
           <h2 class="subtitle">Наша команда</h2>
           <ul class="people__list list">
             <li class="people__item">
-              <img src="./images/img4.jpg" alt="Ігор Дем'яненко" width="270" >
+              <picture>
+                <source
+                srcset="./images/team/img1-desk-1x.jpg 1x,
+              ./images/team/img1-desk-2x.jpg 2x
+              "
+              media="(min-width: 1200px)">
+                <source
+                srcset="./images/team/img1-tab-1x.jpg 1x,
+              ./images/team/img1-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)">
+                <source
+                srcset="./images/team/img1-mob-1x.jpg 1x,
+              ./images/team/img1-mob-2x.jpg 2x
+              "
+              media="(min-width: 320px)">
+              <img src="./images/team/img1-desk-1x.jpg" alt="Ігор Дем'яненко" width="450">
+              </picture>
+
               <div class="people__name">
                 <h3 class="people__title">Ігор Дем'яненко</h3>
                 <p class="people__text">Product Designer</p>
@@ -194,7 +224,27 @@
               </div>
             </li>
             <li class="people__item">
-              <img src="./images/img3.jpg" alt="Ольга Рєпіна" width="270" >
+              <picture>
+                <source
+                srcset="./images/team/img2-desk-1x.jpg 1x,
+              ./images/team/img2-desk-2x.jpg 2x
+              "
+              media="(min-width: 1200px)">
+                <source
+                srcset="./images/team/img2-tab-1x.jpg 1x,
+              ./images/team/img2-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)">
+                <source
+                srcset="./images/team/img2-mob-1x.jpg 1x,
+              ./images/team/img2-mob-2x.jpg 2x
+              "
+              media="(min-width: 320px)">
+              <img 
+             
+              src="./images/team/img2-desk-1x.jpg" alt="Ольга Рєпіна" width="450" >
+              </picture>
+             
               <div class="people__name">
                 <h3 class="people__title">Ольга Рєпіна</h3>
                 <p class="people__text">Frontend Developer</p>
@@ -256,7 +306,28 @@
               </div>
             </li>
             <li class="people__item">
-              <img src="./images/img6.jpg" alt="Микола Тарасов" width="270" >
+              <picture>
+                <source
+                srcset="./images/team/img3-desk-1x.jpg 1x,
+              ./images/team/img3-desk-2x.jpg 2x
+              "
+              media="(min-width: 1200px)">
+                <source
+                srcset="./images/team/img3-tab-1x.jpg 1x,
+              ./images/team/img3-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)">
+                <source
+                srcset="./images/team/img3-mob-1x.jpg 1x,
+              ./images/team/img3-mob-2x.jpg 2x
+              "
+              media="(min-width: 320px)">
+              <img 
+             
+              src="./images/team/img3-desk-1x.jpg" alt="Микола Тарасов" width="450" >
+              </picture>
+             
+              
               <div class="people__name">
                 <h3 class="people__title">Микола Тарасов</h3>
                 <p class="people__text">Marketing</p>
@@ -318,7 +389,27 @@
               </div>
             </li>
             <li class="people__item">
-              <img src="./images/img5.jpg" alt="Михайло Єрмаков" width="270" >
+              <picture>
+                <source
+                srcset="./images/team/img4-desk-1x.jpg 1x,
+              ./images/team/img4-desk-2x.jpg 2x
+              "
+              media="(min-width: 1200px)">
+                <source
+                srcset="./images/team/img4-tab-1x.jpg 1x,
+              ./images/team/img4-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)">
+                <source
+                srcset="./images/team/img4-mob-1x.jpg 1x,
+              ./images/team/img4-mob-2x.jpg 2x
+              "
+              media="(min-width: 320px)">
+              <img 
+             
+              src="./images/team/img4-desk-1x.jpg" alt="Михайло Єрмаков" width="450" >
+              </picture>
+            
               <div class="people__name">
                 <h3 class="people__title">Михайло Єрмаков</h3>
                 <p class="people__text">UI Designer</p>
@@ -616,6 +707,6 @@
       </div>
     </div>
      <script src="./js/modal.js"></script>
-     <script defer src="./js/mobile-menu.js"></script>
+     <!-- <script defer src="./js/mobile-menu.js"></script> -->
   </body>
 </html>

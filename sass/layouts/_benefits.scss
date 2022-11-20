@@ -1,3 +1,9 @@
+.benefits{
+  padding-bottom: 0;
+  @include desktop{
+    padding-bottom: 60px;
+  }
+}
 .cart-list {
     display: flex;
     flex-wrap: wrap;
@@ -15,10 +21,10 @@
       background-position: center;
       background-color: var(--background-grup);
       }
-      @media screen and (min-width: 768px) {
+      @include tablet {
         width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 90px) / 4);
       }
   }

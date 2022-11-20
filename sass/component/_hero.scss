@@ -1,31 +1,74 @@
 .title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
     color: var(--headin-color);
+   @include desktop {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    }
   }
   
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
+    width: 100%;
+    padding: 118px 60px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero.jpg);
+      url('../../images/header-mobile.jpg');
     background-color: var(--background-hero);
-  
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include retina {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/header-mobile2x.jpg');
+   }
+  
+    @include tablet {
+      padding: 118px 204px;
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/header-tablet.jpg');
+      @include retina {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url('../../images/header-tablet2x.jpg');
+    }
+  }
+    @include desktop {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      max-width: 1600px;
+      height: 600px;
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero.jpg');
+      @include retina {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url('../images/header-desktop2x.jpg');
+    }
+  }
   }
