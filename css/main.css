@@ -113,6 +113,7 @@ button {
   .subtitle {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -291,7 +292,7 @@ button {
 
 .title {
   font-weight: 900;
-  font-size: 26px;
+  font-size: 5vw;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
@@ -300,6 +301,16 @@ button {
   margin: 0 auto;
   margin-bottom: 30px;
   color: var(--headin-color);
+}
+@media screen and (min-width: 480px) {
+  .title {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 26px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .title {
@@ -327,7 +338,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 118px 204px;
+    padding: 118px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-tablet.jpg");
   }
 }
@@ -672,7 +683,18 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--background-hero);
-  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-logo {
@@ -682,6 +704,19 @@ button {
 .footer-container-address {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer-container-address {
+    text-align: center;
+    margin-left: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container-address {
+    text-align: start;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
 
 .footer-logo-link {
   font-family: "Raleway", sans-serif;
@@ -690,11 +725,6 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-}
-@media screen and (min-width: 768px) {
-  .footer-logo-link {
-    margin-right: 87px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer-logo-link {
@@ -731,6 +761,7 @@ button {
 @media screen and (min-width: 1200px) {
   .address-list-item:not(:last-child) {
     margin-bottom: 9px;
+    margin-top: 0;
   }
 }
 
@@ -771,6 +802,12 @@ button {
 .footer-soc {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer-soc {
+    margin-left: 165px;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-soc {
     margin-left: 70px;
@@ -806,6 +843,15 @@ button {
   fill: #ffffff;
 }
 
+.footer-form-email {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-email {
+    margin-left: 93px;
+  }
+}
+
 .footer-form-title {
   font-weight: 700;
   font-size: 14px;
@@ -815,14 +861,17 @@ button {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-
-.footer-form {
-  height: 50px;
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .footer-form-title {
+    text-align: start;
+  }
 }
 
-.footer-form input {
-  margin-bottom: 20px;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    height: 50px;
+  }
 }
 
 .footer-form input {
@@ -838,6 +887,7 @@ button {
   outline: transparent;
   color: #FFFFFF;
   transition: border-color var(--tra);
+  margin-bottom: 20px;
 }
 .footer-form input:focus, .footer-form input:hover {
   border-color: var(--accent-color);
@@ -866,9 +916,17 @@ button {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 768px) {
+  .footer-form input {
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-form input {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
@@ -890,23 +948,19 @@ button {
   cursor: pointer;
   transition: background-color var(--tra);
 }
-.footer-form-button:focus, .footer-form-button:hover {
-  background-color: var(--color-button);
-}
 @media screen and (min-width: 1200px) {
   .footer-form-button {
     display: flex;
     margin-left: 10px;
   }
 }
+.footer-form-button:focus, .footer-form-button:hover {
+  background-color: var(--color-button);
+}
 
 .footer-button-icon {
   fill: #FFFFFF;
   margin-left: 10px;
-  /* position: absolute;
-  right: 28px;
-  top: 50%;
-  transform: translateY(-50%); */
 }
 
 .button {

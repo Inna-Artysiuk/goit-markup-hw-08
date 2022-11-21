@@ -2,15 +2,34 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--background-hero);
-    text-align: center;
+    @media screen and (max-width: 767px){
+      text-align: center;
+    }
+  }
+  .footer-tablet{
+  @include tablet{ 
+    display: flex;
+    justify-content: center;
+  }
+
   }
   .footer-logo {
     color: var(--headin-color);
+   
     
     
   }
   .footer-container-address{
     margin-bottom: 60px;
+    @include tablet {
+      text-align: center;
+      margin-left: 76px;
+    }
+    @include desktop {
+      text-align: start;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
   }
   .footer-logo-link {
     font-family: "Raleway", sans-serif;
@@ -20,9 +39,6 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
     
-    @include tablet{
-      margin-right: 87px;
-    }
       @include desktop{
     font-size: 26px;
     line-height: 1.19;
@@ -33,7 +49,7 @@
   .address {
     @include desktop{
 display: flex;
-    
+   
     }
     
   }
@@ -55,9 +71,8 @@ display: flex;
   .address-list-item:not(:last-child) {
     margin-bottom: 8px;
     @include desktop{
-      
-        margin-bottom: 9px;
-      
+      margin-bottom: 9px;
+      margin-top:0;
     }
     
   }

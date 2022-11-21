@@ -1,5 +1,9 @@
 .footer-soc {
   margin-bottom: 60px;
+  @include tablet {
+    margin-left: 165px;
+    margin-bottom: 0;
+  }
   @include desktop {
     margin-left: 70px;
   }
