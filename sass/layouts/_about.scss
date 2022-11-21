@@ -1,12 +1,10 @@
 .about {
-    padding: 0;
-    // @include desktop{
-    //   padding-top: 0;
-    // }
+ @media screen and (max-width: 1199px){
+  display: none;
+ }
+ padding-top: 0;
   }
   .about__subtitle{
-    display: none;
-    @include desktop {
       display: block;
       font-weight: 700;
     font-size: 36px;
@@ -14,23 +12,21 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     }
-  }
+ 
   .picture-list {
     display: flex;
     gap: var(--card-set-gap);
     flex-wrap: wrap;
   }
   .picture-list__item {
-    display: none;
-    @include desktop{
       display: flex;
 position: relative;
     width: calc((100% - var(--card-set-gap) * 2) / 3);
     }
     
-  }
+  
   .picture-list__title{
   position: absolute;
   bottom: 0;

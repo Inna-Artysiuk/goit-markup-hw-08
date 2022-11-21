@@ -6,12 +6,25 @@
   .header__container {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+     @include tablet {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
   
   .menu {
-    display: flex;
+    display: none;
+    @include tablet{
+      display: flex;
+      align-items: center;
+    gap: 50px;
+    & .nav-link.current {
+      color: var(--accent-color);
+    }
+    }
     align-items: center;
     gap: 50px;
     & .nav-link.current {
@@ -38,7 +51,7 @@
        color: var(--accent-color);
      }
   }
-  
+ 
   .current::after{
     position: absolute;
     bottom: -40px;;
@@ -51,16 +64,19 @@
   }
  
   .header__connect {
-    display: flex;
-    align-items: center;
+    display: none;
+    @include tablet{
+      display: flex;
+  align-items: center;
     margin-left: auto;
+    }
+   
   }
   .connect__list {
     display: flex;
     gap: 30px;
   }
   .connect__item {
-    display: flex;
     align-items: center;
     margin: 0 auto;
   }
@@ -99,4 +115,5 @@
       color: var(--accent-color);
     }
   }
+
   
