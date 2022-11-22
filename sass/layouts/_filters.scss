@@ -28,14 +28,16 @@
 
   .button-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: center;
     gap: 8px;
-    margin-bottom: 46px;
+    margin-bottom: 40px;
     @include tablet{
       margin-bottom: 30px;
+      justify-content: center;
     }
     @include desktop{
       margin-bottom: 50px;
+      
     }
   }

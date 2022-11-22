@@ -73,8 +73,11 @@
    
   }
   .connect__list {
-    display: flex;
-    gap: 30px;
+    @include desktop {
+      display: flex;
+      gap: 30px;
+    }
+    
   }
   .connect__item {
     align-items: center;
@@ -101,9 +104,11 @@
     margin-right: 10px;
   }
   .connect__tel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     transition: color var(--tra);
     font-weight: 500;
     font-size: 14px;

@@ -7,9 +7,15 @@
   transition: opacity 400ms linear, visibility 400ms linear;
   
   }
+ 
   .modal{
-  width: 528px;
-  min-height: 581px;
+    @media screen and (max-width: 1199px) {
+      height: 95%;
+      width: 95%;
+      max-width: 450px;
+      max-height: 609px;
+    }
+      
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -19,7 +25,13 @@
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 250ms linear, border-radius 250ms linear;
   padding: 40px;
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
   }
+  }
+
+  
   .backdrop.is-hidden .modal{
     transform: translate(-50%, -50%) scaleY(0);
     border-radius: 50%;
@@ -52,19 +64,21 @@
     background-color: var(--accent-color);
   } */
 
-  .backdrop.is-hidden{
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
+
   .modal-title{
     font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-size: 4vw;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 12px;
+  @include mobil {
+    font-size: 20px;
+  }
+  @include desktop {
+    line-height: 1.15;
+  }
   }
   .modall-field{
   margin-bottom: 10px;
@@ -140,14 +154,31 @@
   }
   .check-text{
     font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-  
+font-size: 2vw;
+line-height: 1.17;
+letter-spacing: 0.03em;
+color: #757575;
+@include mobil {
+  font-size: 12px;
+}
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   .umova {
+    font-weight: 400;
+font-size: 2vw;
+line-height: 1.17;
+letter-spacing: 0.03em;
     color: #2196F3;
+    @include mobil {
+      font-size: 12px;
+    }
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   .modal-label{
     display: flex;

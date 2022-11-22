@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студія</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" >
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-     <header class="header">
+      <header class="header"> 
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo link" href="./index.html"
@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>  
-        <button type="button" class="menu-open">
+        <button type="button" class="menu-open" data-menu-open>
           <svg class="menu__icon" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -66,9 +66,85 @@
           </ul>
       </div>
     </div>
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="container">
+        <button type="button" class="menu-close" data-menu-close>
+          <svg class="menu-icon-close" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+       <div class="mob-menu-top">
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link current" href="./index.html">Студія</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#">Контакти</a>
+            </li>
+          </ul>
+       </div>
+       <div mob-menu-bottom>
+           <div class="mob-conect">
+              <ul class="mob-connect-list list">
+                <li class="mob-connect-item">
+                  <a class="mob-connect-tel link" href="tel:+380961111111">+38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mob-connect-item">
+                  <a class="mob-connect-mail link" href="mailto:info@devstudio.com">info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+           </div>
+        
+          <div class="mob-soc">
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a
+                        href="https://www.instagram.com"
+                        class="mob-soc-link link"
+                        target="_blank"
+                        rel="noopener noreferrer nofolbow"
+                      >Instagram
+                      </a>
+              </li>
+              <li class="mob-soc-item">
+                <a
+                        href="https://www.twitter.com"
+                        class="mob-soc-link link"
+                        target="_blank"
+                        rel="noopener noreferrer nofolbow"
+                      >Twitter
+                      </a>
+              </li>
+              <li class="mob-soc-item">
+                <a
+                        href="https://www.facebook.com"
+                        class="mob-soc-link link"
+                        target="_blank"
+                        rel="noopener noreferrer nofolbow"
+                      >Facebook
+                      </a>
+              </li>
+              <li class="mob-soc-item">
+                <a
+                        href="https://www.linkedin.com"
+                        class="mob-soc-link link"
+                        target="_blank"
+                        rel="noopener noreferrer nofolbow"
+                      >LinkedIn
+                      </a>
+              </li>
+            </ul>
+          </div>
+         </div>
+      </div>
+    </div>
     
-    
-    </header> 
+    </header>
     <main>
       <section class="hero section">
         <div class="container container-hero">
@@ -706,7 +782,11 @@
             <label class="modal-label">
               <input class="checkbox" type="checkbox" name="agreement" value="check" >
             <span class="icon-check"></span>
-          Погоджуюся з розсилкою та приймаю  <a class="umova" href="#" rel="noopener noreferrer nofolbow">Умови договору</a>
+            <p class="check-text">
+              Погоджуюся з розсилкою та приймаю
+              <a class="umova" href="#" rel="noopener noreferrer nofolbow">Умови договору</a>
+            </p>
+            
             </label>
           </div>
           <div class="modal-button">
@@ -716,6 +796,6 @@
       </div>
     </div>
      <script src="./js/modal.js"></script>
-     <!-- <script defer src="./js/mobile-menu.js"></script> -->
+     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

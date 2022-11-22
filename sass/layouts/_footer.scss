@@ -23,12 +23,10 @@
     margin-bottom: 60px;
     @include tablet {
       text-align: center;
-      margin-left: 76px;
     }
     @include desktop {
       text-align: start;
       margin-bottom: 0;
-      margin-left: 0;
     }
   }
   .footer-logo-link {
@@ -42,17 +40,10 @@
       @include desktop{
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 93px;
     }
   
   }
-  .address {
-    @include desktop{
-display: flex;
-   
-    }
-    
-  }
+
   .footer-address {
     font-family: inherit;
     font-style: normal;
