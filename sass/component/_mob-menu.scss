@@ -49,13 +49,16 @@ margin-bottom: 32px;
 }
 .mob-menu-link {
   font-weight: 500;
-font-size: 40px;
+font-size: 8vw;
 line-height: 1.18;
 letter-spacing: 0.02em;
 color: #212121;
 &:hover,
 &:focus{
   color: var(--accent-color);
+}
+@include mobil {
+  font-size: 40px;
 }
 }
 .mob-conect {
@@ -68,7 +71,7 @@ color: #212121;
   font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 34px;
+font-size: 7vw;
 line-height: 1.18;
 letter-spacing: 0.02em;
 color: #757575;
@@ -76,17 +79,22 @@ color: #757575;
 &:focus {
   color: #2196F3;
 }
-
+@include mobil {
+  font-size: 34px;
+}
 }
 .mob-connect-mail {
   font-weight: 500;
-font-size: 24px;
+font-size: 5vw;
 line-height: 28px;
 letter-spacing: 0.02em;
 color: #757575;
 &:hover,
 &:focus {
   color: #2196F3;
+}
+@include mobil {
+  font-size: 24px;
 }
 }
 
@@ -97,9 +105,11 @@ color: #757575;
 }
 
 .mob-soc-link {
-font-size: 18px;
+font-size: 3.75vw;
 line-height: 1.22;
 letter-spacing: 0.02em;
-
 color: #2196F3;
+@include mobil {
+  font-size: 18px;
+}
 }

@@ -464,13 +464,18 @@ button {
 
 .mob-menu-link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 8vw;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
 }
 .mob-menu-link:hover, .mob-menu-link:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu-link {
+    font-size: 40px;
+  }
 }
 
 .mob-conect {
@@ -485,7 +490,7 @@ button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 7vw;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #757575;
@@ -493,16 +498,26 @@ button {
 .mob-connect-tel:hover, .mob-connect-tel:focus {
   color: #2196F3;
 }
+@media screen and (min-width: 480px) {
+  .mob-connect-tel {
+    font-size: 34px;
+  }
+}
 
 .mob-connect-mail {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 5vw;
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
 }
 .mob-connect-mail:hover, .mob-connect-mail:focus {
   color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .mob-connect-mail {
+    font-size: 24px;
+  }
 }
 
 .mob-soc-list {
@@ -511,10 +526,15 @@ button {
 }
 
 .mob-soc-link {
-  font-size: 18px;
+  font-size: 3.75vw;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .mob-soc-link {
+    font-size: 18px;
+  }
 }
 
 .cart-list {
